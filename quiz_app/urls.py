@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# Admin Site Config
+admin.sites.AdminSite.site_header = "Quiz App Administration"
+admin.sites.AdminSite.site_title = "Quiz Admin Portal"
+admin.sites.AdminSite.index_title = "Welcome to Quiz Portal"
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
