@@ -1,0 +1,4 @@
+.idea
+__pycache__
+quiz_app/local_settings.py
+db.sqlite3
